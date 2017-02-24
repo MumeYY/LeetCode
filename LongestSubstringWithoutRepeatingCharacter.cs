@@ -10,15 +10,33 @@
 
 // Subscribe to see which companies asked this question.
 //思路1
-//O(n^2)
+//抄袭答案的，总结就是Hash大法好，进坑保平安
+//类似题目需要多观察原理
+//这是通过维护一个窗口[i, j]，保证窗口内没有相同字符
+using System;
+using System.Collections.Generic;
 public class Solution {
     public int LengthOfLongestSubstring(string s) {
-        // char[] charArray = s.ToArray();
-        int[] result = new int[s.Length+1];
-        result[0] = 0;
-        for (int i = 0; i < s.Length; i++)
+        if(s.Length <= 0)
         {
-            if(s.IndexOf(s[i],  i - result[i], result[i] + 1));
+            return 0;
         }
+        int maxLength = 0;
+        HashSet<char> charSet = new HashSet<char>();
+        for(int i = 0, j = 0; j < s.Length && i < s.Length;)
+        {
+            if(!charSet.Contains(s[j]))
+            {
+                maxLength = Math.Max(maxLength, j - i + 1);
+                charSet.Add(s[j]);
+                ++j;
+            }
+            else
+            {
+                charSet.Remove(s[i]);
+                ++i;
+            }
+        }
+        return maxLength;
     }
 }
