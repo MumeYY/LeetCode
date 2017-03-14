@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-public class Solution {
+partial class Solution {
     public string[] FindWords(string[] words) {
         char[] line1 = "qwertyuiop".ToCharArray();
         char[] line2 = "asdfghjkl".ToCharArray();

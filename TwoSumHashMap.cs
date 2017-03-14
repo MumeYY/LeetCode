@@ -8,8 +8,9 @@
 // Because nums[0] + nums[1] = 2 + 7 = 9,
 // return [0, 1].
 // Subscribe to see which companies asked this question.
-public class Solution {
-    public int[] TwoSum(int[] nums, int target) {
+using System.Collections.Generic;
+partial class Solution {
+    public int[] TwoSumHashMap(int[] nums, int target) {
         Dictionary<int, int> map = new Dictionary<int, int>();
         for (int i = 0; i < nums.Length; ++i)
         {

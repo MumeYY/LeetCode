@@ -16,7 +16,7 @@
  * }
  */
 
-public class Solution {
+partial class Solution {
     public class ListNode {
         public int val;
         public ListNode next;

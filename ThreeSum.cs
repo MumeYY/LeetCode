@@ -14,7 +14,9 @@
 
 //一般来说大于n^2的复杂度的算法就不需要继续下去了
 //同时一般一个无序的数组优先排序总是有好处的
-public class Solution {
+using System.Collections.Generic;
+using System;
+partial class Solution {
     public IList<IList<int>> ThreeSum(int[] nums) {
         Array.Sort(nums);
         IList<IList<int>> result = new List<IList<int>>();

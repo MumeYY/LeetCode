@@ -1,4 +1,4 @@
-public class Solution {
+partial class Solution {
     public int CountBattleships(char[,] board) {
         if (board.Length == 0)
         {

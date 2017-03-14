@@ -15,7 +15,7 @@
 //这是通过维护一个窗口[i, j]，保证窗口内没有相同字符
 using System;
 using System.Collections.Generic;
-public class Solution {
+partial class Solution {
     public int LengthOfLongestSubstring(string s) {
         if(s.Length <= 0)
         {
