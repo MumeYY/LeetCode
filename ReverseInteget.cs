@@ -18,9 +18,21 @@
 // The input is assumed to be a 32-bit signed integer. Your function should return 0 when the reversed integer overflows.
 
 // Subscribe to see which companies asked this question.
+
+//这里偷懒用了long也就是int64进行存储
 partial class Solution {
     public int Reverse(int x) {
         long result = 0;
-        return 0;
+
+        while(x != 0)
+        {
+            int tail = x % 10;
+            result = result * 10  +  tail;
+            x = x / 10;
+        }
+        if (result > (long)int.MaxValue || result < (long)int.MinValue)
+            return 0;
+        else
+            return (int)result;
     }
 }
