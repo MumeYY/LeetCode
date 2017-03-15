@@ -12,10 +12,60 @@
 // Output:
 // [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
 // Subscribe to see which companies asked this question.
+using System.Collections.Generic;
+//总体来说先排序，第一总结就是排序大法好
 partial class Solution {
     public int[,] ReconstructQueue(int[,] people) {
-        int[,] result = new int[people.GetLength(0), people.GetLength(1)];
-        // System.Array.Sort()
+        int PeopleNumber = people.GetLength(0);
+        List<Data> peopleList = new List<Data>();
+        for(int i = 0; i < PeopleNumber; ++i)
+        {
+            peopleList.Add(new Data(people[i, 0], people[i, 1]));
+        }
+        peopleList.Sort(new System.Comparison<Data>(Comparer));
+
+        List<Data> resultList = new List<Data>();
+        for(int i = 0; i < peopleList.Count; ++i)
+        {
+            Data tmp = peopleList[i];
+            if(tmp.k >= resultList.Count)
+            {
+                resultList.Add(tmp);
+            }
+            else
+            {
+                resultList.Insert(tmp.k, tmp);
+            }
+        }
+        int[,] result = new int[PeopleNumber, 2];
+        for(int i = 0; i < resultList.Count; ++i)
+        {
+            result[i, 0] = resultList[i].h;
+            result[i, 1] = resultList[i].k;
+        }
         return result;
     }
+    public int Comparer(Data a, Data b)
+    {
+        if(a.h != b.h)
+        {
+            return a.h > b.h ? -1 : 1;
+        }
+        else if(a.k != b.k)
+        {
+            return a.k < b.k ? -1 : 1;
+        }
+        return 0;
+    }
+    public class Data{
+        public int h;
+        public int k;
+
+        public Data(int h, int k)
+        {
+            this.h = h;
+            this.k = k;
+        }
+    }
+
 }
