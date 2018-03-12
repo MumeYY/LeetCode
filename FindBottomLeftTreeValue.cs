@@ -38,7 +38,7 @@
  //前面几个都用栈，属于深度优先搜索
  //层次遍历用队列，属于广度优先搜索
  using System.Collections.Generic;
-partial class Solution {
+partial class FindBottomLeftTreeValue {
     public class TreeNode {
         public int val;
         public TreeNode left;

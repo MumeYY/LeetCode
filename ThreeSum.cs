@@ -16,8 +16,8 @@
 //同时一般一个无序的数组优先排序总是有好处的
 using System.Collections.Generic;
 using System;
-partial class Solution {
-    public IList<IList<int>> ThreeSum(int[] nums) {
+partial class ThreeSum {
+    public IList<IList<int>> Solution(int[] nums) {
         Array.Sort(nums);
         IList<IList<int>> result = new List<IList<int>>();
         for(int i = 0; i < nums.Length - 2; ++i)

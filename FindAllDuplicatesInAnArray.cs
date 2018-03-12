@@ -13,7 +13,7 @@
 // [2,3]
 // Subscribe to see which companies asked this question.
 using System.Collections.Generic;
-partial class Solution {
+partial class FindAllDuplicatesInAnArray {
     public IList<int> FindDuplicates(int[] nums) {
         
         IList<int> result = new List<int>();

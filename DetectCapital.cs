@@ -16,7 +16,7 @@
 // Note: The input will be a non-empty word consisting of uppercase and lowercase latin letters.
 
 // Subscribe to see which companies asked this question.
-partial class Solution {
+partial class DetectCapital {
     public bool DetectCapitalUse(string word) {
         if(word.Length == 0)
         {

@@ -14,7 +14,7 @@
 
 // Show Tags
 // Show Similar Problems
-partial class Solution {
+partial class MaxConsecutiveOnes {
     public int FindMaxConsecutiveOnes(int[] nums) {
         int result = 0;
         int Tmp = 0;

@@ -13,7 +13,7 @@
 
 // The median is (2 + 3)/2 = 2.5
 // Subscribe to see which companies asked this question.
-partial class Solution {
+partial class MedianOfTwoSortedArrays {
     public double FindMedianSortedArrays(int[] nums1, int[] nums2) {
         return 0;
     }

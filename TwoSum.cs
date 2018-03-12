@@ -8,7 +8,7 @@
 // Because nums[0] + nums[1] = 2 + 7 = 9,
 // return [0, 1].
 // Subscribe to see which companies asked this question.
-partial class Solution {
+partial class TwoSum {
     public int[] TwoSum(int[] nums, int target) {
         for (int i = 0; i < nums.Length - 1; ++i)
         {

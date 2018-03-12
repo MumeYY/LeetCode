@@ -16,7 +16,7 @@
  * }
  */
 
-partial class Solution {
+partial class AddTwoNumbers {
     public class ListNode {
         public int val;
         public ListNode next;

@@ -26,7 +26,7 @@
 // ]
 // Subscribe to see which companies asked this question.
 using System.Collections.Generic;
-partial class Solution {
+partial class FizzBuzz {
     public IList<string> FizzBuzz(int n) {
         IList<string> result = new List<string>();
         int count3 = 1;

@@ -4,7 +4,7 @@
 // Given s = "hello", return "olleh".
 
 // Subscribe to see which companies asked this question.
-partial class Solution {
+partial class ReverseString {
     public string ReverseString(string s) {
         char[] result = new char[s.Length];
         for(int i = 0; i < s.Length; ++i)

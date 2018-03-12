@@ -13,7 +13,7 @@
 // Subscribe to see which companies asked this question.
 
 //很明显的动态规划，让别人到4的情况就是必胜法
-partial class Solution {
+partial class NimGame {
     public bool CanWinNim(int n) {
         // return n % 4 != 0;
         return (n & 0x3) > 0;

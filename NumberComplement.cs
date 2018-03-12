@@ -1,7 +1,7 @@
 //两数相加等于2^n - 1
 //2 << 31次方错误，成为负数
 //所以需要修改
-partial class Solution {
+partial class NumberComplement {
     public int FindComplement(int num) {
         if(num == 0 || num == 1)
         {

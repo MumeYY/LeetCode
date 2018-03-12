@@ -11,7 +11,7 @@
 // Explanation: The perimeter is the 16 yellow stripes in the image below:
 
 // Subscribe to see which companies asked this question.
-partial class Solution {
+partial class IslandPerimeter {
     public int IslandPerimeter(int[,] grid) {
         int result = 0;
         int width = grid.GetLength(0);

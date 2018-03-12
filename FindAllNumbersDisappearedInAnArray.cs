@@ -17,7 +17,7 @@
 // Show Tags
 // Show Similar Problems
 using System.Collections.Generic;
-partial class Solution {
+partial class FindAllNumbersDisappearedInAnArray {
     public IList<int> FindDisappearedNumbers(int[] nums) {
         IList<int> result = new List<int>();
         for(int i = 0; i < nums.Length; ++i)

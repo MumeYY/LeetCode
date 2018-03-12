@@ -22,7 +22,7 @@
  * }
  */
  using System.Collections.Generic;
-partial class Solution {
+partial class FindLargestValueInEachTreeRow {
     public IList<int> LargestValues(TreeNode root) {
         IList<int> result = new List<int>();
         if(root == null)

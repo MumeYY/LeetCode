@@ -20,7 +20,7 @@
 // Subscribe to see which companies asked this question.
 
 //这里偷懒用了long也就是int64进行存储
-partial class Solution {
+partial class ReverseInteget {
     public int Reverse(int x) {
         long result = 0;
 

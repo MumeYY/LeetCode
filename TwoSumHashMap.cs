@@ -9,8 +9,8 @@
 // return [0, 1].
 // Subscribe to see which companies asked this question.
 using System.Collections.Generic;
-partial class Solution {
-    public int[] TwoSumHashMap(int[] nums, int target) {
+partial class TwoSumHashMap {
+    public int[] TwoSumHashMapSolution(int[] nums, int target) {
         Dictionary<int, int> map = new Dictionary<int, int>();
         for (int i = 0; i < nums.Length; ++i)
         {

@@ -7,7 +7,7 @@
 using System.Collections.Generic;
 //总体功能来说都是做缓存的思路
 
-public class Codec {
+public class EncodeAndDecodeTinyURL {
 
     Dictionary<string, string> m = new Dictionary<string, string>();
     // Encodes a URL to a shortened URL

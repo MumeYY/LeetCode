@@ -20,7 +20,7 @@
 // All elements in nums1 and nums2 are unique.
 // The length of both nums1 and nums2 would not exceed 1000.
 // Subscribe to see which companies asked this question.
-partial class Solution {
+partial class NextGreaterElement1 {
     public int[] NextGreaterElement(int[] findNums, int[] nums) {
         int[] result = new int[findNums.Length];
         for(int i = 0; i < findNums.Length; ++i)

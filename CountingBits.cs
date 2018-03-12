@@ -14,7 +14,7 @@
 // You should make use of what you have produced already.
 // Divide the numbers in ranges like [2-3], [4-7], [8-15] and so on. And try to generate new range from previous.
 // Or does the odd/even status of the number help you in calculating the number of 1s?
-partial class Solution {
+partial class CountingBits {
     public int[] CountBits(int num) {
         if(num == 0)
         {

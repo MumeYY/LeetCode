@@ -14,7 +14,7 @@
 // Subscribe to see which companies asked this question.
 using System.Collections.Generic;
 //总体来说先排序，第一总结就是排序大法好
-partial class Solution {
+partial class QueueReconstructionByHeight {
     public int[,] ReconstructQueue(int[,] people) {
         int PeopleNumber = people.GetLength(0);
         List<Data> peopleList = new List<Data>();
